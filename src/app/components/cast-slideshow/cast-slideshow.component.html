@@ -1,0 +1,20 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Diapositivas -->
+        <div *ngFor="let actor of cast" class="swiper-slide text-white text-center">
+            <img [src]="actor.profile_path ? (actor.profile_path | poster) : 'path_to_default_image.jpg'"
+                [alt]="actor.name" class="img-thumbnail" />
+            <p>{{ actor.name }}</p>
+        </div>
+    </div>
+    <!-- Botones de navegación -->
+    <!-- Botón Anterior -->
+    <div class="swiper-button-prev">
+        <i class="fa fa-chevron-left"></i>
+    </div>
+    <!-- Botón Siguiente -->
+    <div class="swiper-button-next">
+        <i class="fa fa-chevron-right"></i>
+    </div>
+
+</div>

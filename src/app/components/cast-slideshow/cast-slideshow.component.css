@@ -1,0 +1,45 @@
+.swiper-container {
+    overflow: hidden;
+    /* Evita barras de desplazamiento horizontal */
+}
+
+/* Estilos para los botones previo y siguiente */
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #000;
+    /* o cualquier otro estilo que prefieras */
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    color: #fff;
+    font-size: 20px;
+}
